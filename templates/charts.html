@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+      <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>My Chart.js Chart</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="ct-chart ct-perfect-fourth"></div>
+  </div>
+
+<h1>{{positive}}</h1>
+{{neutral}}
+{{negative}}
+
+{{date}}
+<h2></h2>
+
+<script>
+
+      
+   
+  var chart = new Chartist.Line('.ct-chart', {
+    labels: ['{{res}}'],
+    // Naming the series with the series object array notation
+    series: [{
+      name: 'series-1',
+      data: {{ positive }}
+    }, {
+      name: 'series-2',
+      data: {{ negative }}
+    }, {
+      name: 'series-3',
+      data: {{ neutral}}
+    }]
+  }, {
+    fullWidth: true,
+    // Within the series options you can use the series names
+    // to specify configuration that will only be used for the
+    // specific series.
+    series: {
+      'series-1': {
+        lineSmooth: Chartist.Interpolation.step()
+      },
+      'series-2': {
+        lineSmooth: Chartist.Interpolation.simple(),
+        showArea: true
+      },
+      'series-3': {
+        showPoint: false
+      }
+    }
+  }, [
+    // You can even use responsive configuration overrides to
+    // customize your series configuration even further!
+    ['screen and (max-width: 320px)', {
+      series: {
+        'series-1': {
+          lineSmooth: Chartist.Interpolation.none()
+        },
+        'series-2': {
+          lineSmooth: Chartist.Interpolation.none(),
+          showArea: false
+        },
+        'series-3': {
+          lineSmooth: Chartist.Interpolation.none(),
+          showPoint: true
+        }
+      }
+    }]
+  ]);
+
+</script>
+</body>
+</html>
