@@ -16,3 +16,8 @@ The mood of India During Covid-19 provides emotion of a state in India through a
 
 
 # Dashboard
+
+
+
+
+![](pic/Screenshot%20(71).png)
