@@ -2,7 +2,7 @@
 
 
 
-# Our Project link:  
+# Our Deployed Project link:  
  
  https://ibm-sentiment-analysis.herokuapp.com/
  
