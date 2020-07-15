@@ -6,7 +6,7 @@
  
  # Our project description video
  
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/It4guxrSdSk "Everything Is AWESOME")
 
 In our dashboard with #COVID-19 tweets, we are also dealing with the other live tweets like government tweets as well as we considered some big cites of India also because this pandemic affect the country in all aspect.
 It will analyze the government profile tweet every time and all those tweets will be analyzed based on polarity and emojis. This project will be easily accessible as it will deploy on the cloud and from every device, it will be accessible. 
