@@ -1,5 +1,7 @@
 # SBSPS-Challenge-3408-Sentiment-Analysis-of-Covid-19-Tweets
 
+[[Team puvi report|Team%20puvi%20report.pdf]]
+
 # Our Project link:  
  
  https://ibm-sentiment-analysis.herokuapp.com/
